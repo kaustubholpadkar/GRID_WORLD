@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <!-- <script src="p5.sound.js"></script> -->
+    <script src="Tile.js"></script>
+    <script src="Grid.js"></script>
+    <script src="Grid_Environment.js"></script>
+    <script src="main.js"></script>
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <style> body {padding: 15px; margin: 0;} </style>
+  </head>
+  <body>
+
+    <form id="form1">
+      <table>
+        <tr>
+          <td> No of Rows : </td>
+          <td> <input id="row"/> </td>
+        </tr>
+
+        <tr>
+          <td> No of Columns : </td>
+          <td> <input id="col"/> </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="radio" id="Game" name="algorithm" value="Game" checked> Game<br>
+            <input type="radio" id="Random" name="algorithm" value="Random"> Random <br>
+            <input type="radio" id="Value" name="algorithm" value="Value"> Value Iteration
+          </td>
+        </tr>
+
+        <tr>
+          <td> <input type="button" onclick="submitData()" value="Show"/></td>
+        </tr>
+      </table>
+    </form>
+
+    <form id="form2">
+      <table>
+        <tr>
+          <td>Start State : </td>
+          <td> <input id="start"/> </td>
+        </tr>
+
+        <tr>
+          <td>Goal State : </td>
+          <td> <input id="goal"/> </td>
+        </tr>
+
+        <tr>
+          <td>Nothing State : </td>
+          <td> <input id="nothing"/> </td>
+        </tr>
+
+        <tr>
+          <td>Doom State : </td>
+          <td> <input id="doom"/> </td>
+        </tr>
+
+        <tr>
+          <td> <input type="button" onclick="startGame()" value="Start"/></td>
+        </tr>
+      </table>
+    </form>
+
+
+
+  </body>
+</html>
